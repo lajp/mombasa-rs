@@ -1,0 +1,24 @@
+[package]
+name = "mombasa-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.serenity]
+version = "*"
+features = ["client", "standard_framework", "voice"]
+
+[dependencies.tokio]
+version = "1.0"
+features = ["macros", "rt-multi-thread", "signal"]
+
+[dependencies.songbird]
+version = "*"
+features = ["builtin-queue"]
+
+[dependencies]
+tracing = "*"
+tracing-subscriber = "0.2"
+tracing-futures = "0.2"
+dotenv = "*"
